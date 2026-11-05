@@ -1,0 +1,28 @@
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+**/.env
+!.env.example
+!**/.env.example
+*.log
+logs/*
+!logs/.gitkeep
+logs/project-processes.json
+.DS_Store
+
+# Local data, uploads and derived outputs stay outside source control.
+data/raw/*
+data/processed/*
+data/cache/*
+uploads/*
+tmp/*
+models/trained/*
+models/checkpoints/*
+
+# Build products and platform files.
+frontend/dist/
+frontend/android/.gradle/
+frontend/android/app/build/

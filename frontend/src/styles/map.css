@@ -1,0 +1,14 @@
+.earth-map { width: 100%; height: 100%; background: #13283b; }
+.leaflet-container { font-family: 'DM Mono', monospace; }
+.leaflet-tile { filter: saturate(0.65) brightness(0.72) contrast(1.05); }
+.satellite-label-tile { filter: none; }
+.leaflet-control-zoom { border: 1px solid rgba(125, 227, 255, 0.3) !important; }
+.leaflet-control-zoom a { color: #7de3ff !important; background: #0b1b2b !important; border-bottom-color: rgba(125, 227, 255, 0.2) !important; }
+.leaflet-control-attribution { color: #8095aa !important; background: rgba(7, 17, 30, 0.75) !important; }
+.leaflet-control-attribution a { color: #7de3ff !important; }
+.leaflet-control-layers { border: 1px solid rgba(125, 227, 255, 0.25) !important; border-radius: 0 !important; color: #d8e7f5; background: rgba(7, 17, 30, 0.92) !important; box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25) !important; }
+.leaflet-control-layers-toggle { width: 34px; height: 34px; background-color: #0b1b2b; }
+.leaflet-control-layers-expanded { padding: 10px 12px; font: 0.68rem 'DM Mono', monospace; }
+.leaflet-control-layers label { margin: 5px 0; }
+.leaflet-control-layers-selector { accent-color: #7de3ff; }
+.map-overlay { position: absolute; z-index: 500; left: 17px; top: 17px; padding: 8px 10px; color: #a9c2d8; border: 1px solid rgba(125, 227, 255, 0.2); background: rgba(7, 17, 30, 0.75); font: 0.58rem 'DM Mono', monospace; letter-spacing: 0.08em; pointer-events: none; }

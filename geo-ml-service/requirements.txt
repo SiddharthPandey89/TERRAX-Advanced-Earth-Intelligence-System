@@ -1,0 +1,19 @@
+# Supported runtime: Python 3.10-3.13. All dependencies run on CPU; no CUDA/model downloads.
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+pydantic>=2.7,<3.0
+python-multipart>=0.0.9,<1.0
+python-dotenv>=1.0,<2.0
+
+# Geospatial preprocessing and numeric algorithms.
+numpy>=1.26,<3.0
+rasterio>=1.3.9,<2.0
+pyproj>=3.6,<4.0
+shapely>=2.0,<3.0
+scipy>=1.11,<2.0
+scikit-learn>=1.4,<2.0
+
+# Optional provider / database clients used by adapters and setup helpers.
+httpx>=0.27,<1.0
+psycopg[binary]>=3.1,<4.0
+reportlab>=4.0,<5.0

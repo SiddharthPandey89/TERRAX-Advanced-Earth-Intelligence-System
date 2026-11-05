@@ -1,0 +1,16 @@
+{
+  "name": "earth-geointelligence-backend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.0.0",
+    "pg": "^8.23.1"
+  }
+}

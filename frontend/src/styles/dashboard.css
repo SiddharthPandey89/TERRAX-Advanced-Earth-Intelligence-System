@@ -1,0 +1,55 @@
+.search-form { min-width: 0; }
+.habitability-button { width: 100%; display: flex; justify-content: space-between; padding: 12px 15px; margin-top: 9px; border: 1px solid rgba(188, 165, 255, 0.5); color: #e9f2fb; background: rgba(96, 72, 156, 0.28); font-weight: 700; font-size: 0.75rem; }
+.habitability-button:hover:not(:disabled) { background: rgba(132, 101, 202, 0.42); }
+.habitability-section { margin-top: 64px; }
+.habitability-empty { min-height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 28px; text-align: center; }
+.habitability-empty h3 { margin: 10px 0 4px; }
+.habitability-empty p { max-width: 520px; margin-bottom: 0; color: var(--muted); font-size: 0.8rem; line-height: 1.6; }
+.habitability-summary { padding: 22px; border-color: rgba(188, 165, 255, 0.25); }
+.habitability-summary__facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.habitability-summary__facts strong { font-size: 0.88rem; }
+.habitability-explanation { max-width: 780px; margin: 20px 0 0; color: var(--muted); font-size: 0.82rem; line-height: 1.6; }
+.habitability-block { margin-top: 18px; }
+.habitability-block__heading { display: flex; align-items: end; justify-content: space-between; margin-bottom: 14px; }
+.habitability-block__heading h3, .habitability-block > h3 { margin: 0; font-size: 1.1rem; }
+.indicator-status { color: #71e8a8; font: 0.65rem 'DM Mono', monospace; text-transform: uppercase; }
+.method-note { margin: 13px 0 0; color: var(--muted); font-size: 0.72rem; line-height: 1.5; }
+.habitability-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.habitability-detail-grid .habitability-block { padding: 22px; }
+.indicator-list, .source-list { margin-top: 18px; }
+.indicator-list__item { padding: 12px 0; border-top: 1px solid var(--line); }
+.indicator-list__item > div { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.indicator-list__item strong, .source-list__item strong { font-size: 0.78rem; }
+.indicator-list__item span { color: var(--danger); font: 0.62rem 'DM Mono', monospace; text-transform: uppercase; }
+.indicator-list__item p, .source-list__item p { margin: 6px 0 0; color: var(--muted); font-size: 0.72rem; line-height: 1.5; }
+.source-list__item { padding: 12px 0; border-top: 1px solid var(--line); }
+.source-list__item span, .source-list__item small { display: block; margin-top: 5px; color: var(--muted); font: 0.65rem 'DM Mono', monospace; overflow-wrap: anywhere; }
+.limitations-list { margin: 18px 0 0; padding: 16px 0 0 17px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.72rem; line-height: 1.6; }
+@media (max-width: 920px) {
+  .workspace-grid { grid-template-columns: 1fr; }
+  .selection-panel { display: grid; grid-template-columns: 1fr 1fr; column-gap: 18px; }
+  .selection-panel .eyebrow, .selection-panel h2, .selection-panel .selection-copy, .selection-panel .coordinate-box, .selection-panel .privacy-note { grid-column: 1 / -1; }
+  .selection-panel .analyze-button { align-self: end; }
+  .metric-grid { grid-template-columns: repeat(3, 1fr); }
+  .habitability-detail-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .topbar { height: 65px; padding: 0 5vw; }
+  .topbar__status { display: none; }
+  .dashboard { width: 90vw; padding-top: 46px; }
+  .intro-row { display: block; margin-bottom: 32px; }
+  .intro-meta { margin-top: 28px; }
+  .control-bar { display: block; padding: 16px; }
+  .control-hint { max-width: none; margin-top: 12px; }
+  .map-wrap { height: 390px; }
+  .panel-heading, .map-caption { padding: 16px; }
+  .selection-panel { display: block; padding: 20px; }
+  .metric-grid { grid-template-columns: repeat(2, 1fr); }
+  .metric-card { min-height: 112px; padding: 14px; }
+  .metric-card__label { margin-bottom: 17px; }
+  .metric-card__value { font-size: 1.35rem; }
+  .provenance { display: block; padding: 17px; }
+  .provenance > div + div { margin-top: 15px; }
+  .habitability-summary__facts { grid-template-columns: 1fr; gap: 13px; }
+  .habitability-detail-grid .habitability-block { padding: 18px; }
+}

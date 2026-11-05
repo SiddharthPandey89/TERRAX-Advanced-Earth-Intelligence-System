@@ -1,0 +1,10 @@
+@media (max-width: 480px) {
+  h1 { font-size: 2.55rem; }
+  .search-form__input { display: grid; grid-template-columns: auto 1fr; }
+  .search-form button { grid-column: 1 / -1; min-height: 42px; }
+  .search-icon { grid-row: 1; }
+  .search-form input { grid-row: 1; }
+  .metric-grid { gap: 7px; }
+  .metric-card__label { font-size: 0.64rem; }
+}
+
